@@ -1,0 +1,136 @@
+
+msgid ""
+msgstr ""
+"Project-Id-Version: Aoption Widget 1.4\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2010-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+
+#: adoption-post-widget.php:8
+msgid "Displays custom post content in a widget"
+msgstr ""
+
+#: adoption-post-widget.php:9
+msgid "Adoption Data"
+msgstr ""
+
+#: adoption-post-widget.php:19
+msgid "Adoption Data to Display:"
+msgstr ""
+
+#: adoption-post-widget.php:31
+msgid "No Adoption Datas available"
+msgstr ""
+
+#: adoption-post-widget.php:42
+msgid "Show Post Title"
+msgstr ""
+
+#: adoption-post-widget.php:52
+msgid "Do not apply content filters"
+msgstr ""
+
+#: adoption-post-widget.php:61
+msgid "Find"
+msgstr ""
+
+#: adoption-post-widget.php:91
+msgctxt "post type general name"
+msgid "Adoption Datas"
+msgstr ""
+
+#: adoption-post-widget.php:92
+msgctxt "post type singular name"
+msgid "Adoption Data"
+msgstr ""
+
+#: adoption-post-widget.php:93
+msgctxt "post type plural name"
+msgid "Adoption Datas"
+msgstr ""
+
+#: adoption-post-widget.php:94
+msgctxt "block"
+msgid "Add Adoption Data"
+msgstr ""
+
+#: adoption-post-widget.php:95
+msgid "Add New Adoption Data"
+msgstr ""
+
+#: adoption-post-widget.php:96
+msgid "Edit Adoption Data"
+msgstr ""
+
+#: adoption-post-widget.php:97
+msgid "New Adoption Data"
+msgstr ""
+
+#: adoption-post-widget.php:98
+msgid "View Adoption Data"
+msgstr ""
+
+#: adoption-post-widget.php:99
+msgid "Search Adoption Datas"
+msgstr ""
+
+#: adoption-post-widget.php:100
+msgid "No Adoption Datas Found"
+msgstr ""
+
+#: adoption-post-widget.php:101
+msgid "No Adoption Datas found in Trash"
+msgstr ""
+
+#: adoption-post-widget.php:126
+msgid "Adoption Data updated. <a href=\"%s\">View Adoption Data</a>"
+msgstr ""
+
+#: adoption-post-widget.php:127
+msgid "Custom field updated."
+msgstr ""
+
+#: adoption-post-widget.php:128
+msgid "Custom field deleted."
+msgstr ""
+
+#: adoption-post-widget.php:129
+msgid "Adoption Data updated."
+msgstr ""
+
+#: adoption-post-widget.php:130
+msgid "Adoption Data restored to revision from %s"
+msgstr ""
+
+#: adoption-post-widget.php:131
+msgid "Adoption Data published. <a href=\"%s\">View Adoption Data</a>"
+msgstr ""
+
+#: adoption-post-widget.php:132
+msgid "Block saved."
+msgstr ""
+
+#: adoption-post-widget.php:133
+msgid ""
+"Adoption Data submitted. <a target=\"_blank\" href=\"%s\">Preview Content "
+"Block</a>"
+msgstr ""
+
+#: adoption-post-widget.php:134
+msgid ""
+"Adoption Data scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" "
+"href=\"%2$s\">Preview block</a>"
+msgstr ""
+
+#: adoption-post-widget.php:135
+msgid "M j, Y @ G:i"
+msgstr ""
+
+#: adoption-post-widget.php:136
+msgid ""
+"Adoption Data draft updated. <a target=\"_blank\" href=\"%s\">Preview "
+"Adoption Data</a>"
+msgstr ""
+
