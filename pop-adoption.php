@@ -55,7 +55,7 @@ function add_content_block_popup() { ?>
 							echo '<option value="' . $content_block->ID . '" data-slug="' . $content_block->post_name . '">' . $content_block->post_title . '</option>';
 						endforeach;
 					} else {
-						echo '<option value="">' . __( 'No Adoption Datas available', 'adoption-widget' ) . '</option>';
+						echo '<option value="">' . __( 'No Adoption Data available', 'adoption-widget' ) . '</option>';
 					};
 				?>
 			</select>

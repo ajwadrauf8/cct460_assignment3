@@ -21,7 +21,7 @@ msgid "Adoption Data to Display:"
 msgstr ""
 
 #: adoption-post-widget.php:31
-msgid "No Adoption Datas available"
+msgid "No Adoption Data available"
 msgstr ""
 
 #: adoption-post-widget.php:42
@@ -38,7 +38,7 @@ msgstr ""
 
 #: adoption-post-widget.php:91
 msgctxt "post type general name"
-msgid "Adoption Datas"
+msgid "Adoption Data"
 msgstr ""
 
 #: adoption-post-widget.php:92
@@ -48,7 +48,7 @@ msgstr ""
 
 #: adoption-post-widget.php:93
 msgctxt "post type plural name"
-msgid "Adoption Datas"
+msgid "Adoption Data"
 msgstr ""
 
 #: adoption-post-widget.php:94
@@ -73,15 +73,15 @@ msgid "View Adoption Data"
 msgstr ""
 
 #: adoption-post-widget.php:99
-msgid "Search Adoption Datas"
+msgid "Search Adoption Data"
 msgstr ""
 
 #: adoption-post-widget.php:100
-msgid "No Adoption Datas Found"
+msgid "No Adoption Data Found"
 msgstr ""
 
 #: adoption-post-widget.php:101
-msgid "No Adoption Datas found in Trash"
+msgid "No Adoption Data found in Trash"
 msgstr ""
 
 #: adoption-post-widget.php:126

@@ -48,7 +48,7 @@ class adoption_post_widget extends WP_Widget {
 							echo '>' . $content_block -> post_title . '</option>';
 						endforeach;
 					} else {
-						echo '<option value="">' . __( 'No Adoption Datas available', 'adoption-widget' ) . '</option>';
+						echo '<option value="">' . __( 'No Adoption Data available', 'adoption-widget' ) . '</option>';
 					};
 				?>
 				</select>
@@ -120,6 +120,19 @@ class adoption_post_widget extends WP_Widget {
 				echo get_the_post_thumbnail( $content_post -> ID );
 			}
 			echo do_shortcode( $content ); // This is where the actual content of the custom post is being displayed
+			echo "
+					<section id='content'>
+		  				<h1>What is your budget?</h1>
+		  				<div class='cube'>
+					    <div class='a'></div>
+					    <div class='b'></div>
+					    <div class='c'></div>
+					    <div class='d'></div>
+					    <div id='slider-range-min'></div>
+					  	</div>
+					  	<input type='text' id='amount' />
+					</section>
+				";
 			echo $after_widget;
 		}
 	}
@@ -128,17 +141,17 @@ class adoption_post_widget extends WP_Widget {
 // Create the Adoption Data custom post type
 function adoption_post_type_init() {
 	$labels = array(
-		'name' => _x( 'Adoption Datas', 'post type general name', 'adoption-widget' ),
+		'name' => _x( 'Adoption Data', 'post type general name', 'adoption-widget' ),
 		'singular_name' => _x( 'Adoption Data', 'post type singular name', 'adoption-widget' ),
-		'plural_name' => _x( 'Adoption Datas', 'post type plural name', 'adoption-widget' ),
+		'plural_name' => _x( 'Adoption Data', 'post type plural name', 'adoption-widget' ),
 		'add_new' => _x( 'Add Adoption Data', 'block', 'adoption-widget' ),
 		'add_new_item' => __( 'Add New Adoption Data', 'adoption-widget' ),
 		'edit_item' => __( 'Edit Adoption Data', 'adoption-widget' ),
 		'new_item' => __( 'New Adoption Data', 'adoption-widget' ),
 		'view_item' => __( 'View Adoption Data', 'adoption-widget' ),
-		'search_items' => __( 'Search Adoption Datas', 'adoption-widget' ),
-		'not_found' =>  __( 'No Adoption Datas Found', 'adoption-widget' ),
-		'not_found_in_trash' => __( 'No Adoption Datas found in Trash', 'adoption-widget' )
+		'search_items' => __( 'Search Adoption Data', 'adoption-widget' ),
+		'not_found' =>  __( 'No Adoption Data Found', 'adoption-widget' ),
+		'not_found_in_trash' => __( 'No Adoption Data found in Trash', 'adoption-widget' )
 	);
 	$content_block_public = false; // added to make this a filterable option
 	$options = array(

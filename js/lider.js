@@ -1,5 +1,3 @@
- jQuery(document).ready(function($) {
-
 
  $(function() {
     $( "#slider-range-min" ).slider({
@@ -15,4 +13,4 @@
     $(".ui-slider-handle").text("<>");
     $( "#amount" ).val( "$" + $( "#slider-range-min" ).slider( "value") + ",000");
   })
- });
+
