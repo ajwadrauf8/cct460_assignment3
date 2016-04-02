@@ -29,10 +29,11 @@ function custom_adoption_widget_load_widgets() {
 
 function enqueue_scripts() {
 
-	wp_enqueue_script( 'adoption-slider', plugins_url( '/js/lider.js', __FILE__ ));
+	wp_enqueue_script( 'adoption-slider', plugins_url( '/js/lider.js', __FILE__ ), array('jquery'), '2.0.4', true);
 	wp_enqueue_script( 'JQ', plugins_url( '/js/jquery.min.js', __FILE__ ));
 	wp_enqueue_script( 'JQ2', plugins_url( '/js/jquery-ui.min.js', __FILE__ ));
-	wp_enqueue_style( 'styles', get_stylesheet_uri() );
+	wp_enqueue_style( 'styles', plugins_url( 'styles.css', __FILE__ ) );
+	wp_enqueue_script("jquery");
 
 }
 add_action( 'wp_enqueue_scripts', 'enqueue_scripts' );
