@@ -6,10 +6,10 @@ if ( function_exists( 'add_theme_support' ) ) {
 }
 
 // First create the widget for the admin panel
-class custom_post_widget extends WP_Widget {
+class adoption_post_widget extends WP_Widget {
 	function __construct() {
-		$widget_ops = array( 'classname' => 'widget_custom_post_widget', 'description' => __( 'Displays custom post content in a widget', 'adoption-widget' ) );
-		parent::__construct( 'custom_post_widget', __( 'Adoption Data', 'adoption-widget' ), $widget_ops );
+		$widget_ops = array( 'classname' => 'widget_adoption_post_widget', 'description' => __( 'Displays custom post content in a widget', 'adoption-widget' ) );
+		parent::__construct( 'adoption_post_widget', __( 'Adoption Data', 'adoption-widget' ), $widget_ops );
 	}
 
 	function form( $instance ) {
@@ -167,7 +167,7 @@ function content_block_messages( $messages ) {
 add_filter( 'post_updated_messages', 'content_block_messages' );
 
 // Add the ability to display the Adoption Data in a reqular post using a shortcode
-function custom_post_widget_shortcode( $atts ) {
+function adoption_post_widget_shortcode( $atts ) {
 	extract( shortcode_atts( array(
 		'id' => '',
 		'slug' => '',
@@ -195,7 +195,7 @@ function custom_post_widget_shortcode( $atts ) {
 		$content_post = get_posts( $args );
 
 		foreach( $content_post as $post ) :
-			$content .= '<div class="'. esc_attr($class) .'" id="custom_post_widget-' . $id . '">';
+			$content .= '<div class="'. esc_attr($class) .'" id="adoption_post_widget-' . $id . '">';
 			if ( $title === 'yes' ) {
 				$content .= '<' . esc_attr( $title_tag ) . '>' . $post->post_title . '</' . esc_attr( $title_tag ) . '>'; 
 			}
@@ -210,7 +210,7 @@ function custom_post_widget_shortcode( $atts ) {
 
 	return $content;
 }
-add_shortcode( 'content_block', 'custom_post_widget_shortcode' );
+add_shortcode( 'content_block', 'adoption_post_widget_shortcode' );
 
 // Only add content_block icon above posts and pages
 function adoption_add_content_block_button() {

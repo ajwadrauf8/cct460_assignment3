@@ -16,15 +16,15 @@ function custom_post_adoption_init() {
 add_action( 'plugins_loaded', 'custom_post_adoption_init' );
 
 // Load plugin textdomain.
-function custom_adoption_load_textdomain() {
+function custom_adoption_textdomain() {
 	load_plugin_textdomain( 'adoption-widget', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
 }
-add_action( 'plugins_loaded', 'custom_post_adoption_textdomain' );
+add_action( 'plugins_loaded', 'custom_adoption_textdomain' );
 
 // Loads the widgets packaged with the plugin.
 function custom_adoption_widget_load_widgets() {
 	require_once( 'adoption-post-widget.php' );
-	register_widget( 'adoption-plugin' );
+	register_widget( 'adoption_post_widget' );
 }
 
 require_once( 'adoption-box.php' );
