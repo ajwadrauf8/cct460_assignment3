@@ -1,5 +1,15 @@
 <?php
 
+/* 
+ * Plugin Name: Group Plugin Assignment
+ * Plugin URI: https://phoenix.sheridanc.on.ca/~ccit3427/
+ * Description: Showing how  our cool  widget work.
+ * Author: Yahya Al-Mashni, Ajwad Rauf, Benjamin Sin
+ * Assignment 2: Custom Plugin
+ * Author URI: https://phoenix.sheridanc.on.ca/~ccit3427/
+ * Version: 1.0 
+ */
+
 function adoption_add_meta_box() {
 	add_meta_box(
 		'adoption_sectionid',
