@@ -27,6 +27,17 @@ function custom_adoption_widget_load_widgets() {
 	register_widget( 'adoption_post_widget' );
 }
 
+function enqueue_scripts() {
+
+	wp_enqueue_script( 'adoption-slider', plugins_url( '/js/lider.js', __FILE__ ));
+	wp_enqueue_script( 'JQ', plugins_url( '/js/jquery.min.js', __FILE__ ));
+	wp_enqueue_script( 'JQ2', plugins_url( '/js/jquery-ui.min.js', __FILE__ ));
+	wp_enqueue_style( 'styles', get_stylesheet_uri() );
+
+}
+add_action( 'wp_enqueue_scripts', 'enqueue_scripts' );
+
+
 require_once( 'adoption-box.php' );
 require_once( 'pop-adoption.php' );
 require_once( 'notice-adoption.php' );
